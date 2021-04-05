@@ -1,0 +1,24 @@
+.lookbook {
+  &__img {
+    height: 30rem;
+  }
+
+  &__grid {
+    padding-bottom: 2rem;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, max-content);
+    grid-gap: 2rem;
+  }
+}
+
+@media only screen and (max-width: $bp-phone) {
+  .lookbook {
+    &__img {
+      height: 25rem;
+    }
+    &__grid {
+      grid-template-columns: repeat(1, max-content);
+    }
+  }
+}

@@ -1,0 +1,110 @@
+/////////////////////////////////////////////////
+// Hero Section
+.hero-container {
+  width: 100%;
+  height: 92vh;
+  padding: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  height: 100%;
+  width: 100%;
+  // padding: 1rem;
+  padding-bottom: 1rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.12)),
+    url(../img/Screenshot_2021-03-03_at_17.00.10_5d1858e1-4518-4787-b5a9-d1e0135c4735.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  &__text {
+    padding-left: 1rem;
+  }
+}
+
+@media only screen and (max-width: $bp-phone) {
+  .hero-container {
+    padding: 0;
+  }
+  .hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.12)),
+      url(../img/looks/looks-2.jpeg);
+
+    &__date {
+      position: absolute;
+      top: 15vh;
+      right: 0;
+    }
+  }
+}
+
+/////////////////////////////////////////////////
+// Lookbook Section
+
+.homepage-looks {
+  height: 100vh;
+  width: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: $color-grey-light-1;
+
+  &__image {
+    height: 85vh;
+    width: 70vh;
+    // background-color: red;
+    background-image: url(/img/looks/looks-8.jpeg);
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+@media only screen and (max-width: $bp-phone) {
+  .homepage-looks {
+    background-image: url(../img/looks/looks-8.jpeg);
+    background-position: center;
+    background-size: cover;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    text-align: right;
+
+    &__image {
+      display: none;
+    }
+  }
+}
+
+/////////////////////////////////////////////////
+// Lookbook Section
+
+.homepage-video {
+  width: 100%;
+  height: 100vh;
+  padding: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__inner-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (max-width: $bp-phone) {
+  .homepage-video {
+    display: none;
+  }
+}

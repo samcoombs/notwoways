@@ -1,0 +1,97 @@
+// Global Buttons
+.button {
+  border: none;
+  width: 7.5rem;
+  height: 2.75rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  background-color: $color-white;
+  // color: $color-white;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin-left: 0.2rem;
+  transition: all 0.3s ease;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $color-main;
+    color: $color-white;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+/////////////////////////////////////////////////
+// Nav Buttons
+// Login Button
+.hamburger {
+  &__nav {
+    &--login {
+      &-btn {
+        width: 10rem;
+        height: 3.25rem;
+        margin-bottom: 1rem;
+        border: 4px solid $color-white;
+        text-decoration: none;
+        color: $color-secondary;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $bp-phone) {
+  .hamburger {
+    &__nav {
+      &--login {
+        &-btn {
+          width: 7.5rem;
+          height: 2.75rem;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+/////////////////////////////////////////////////
+// Homepage Buttons
+
+// Hero Button
+.hero__btn {
+  color: $color-main;
+}
+
+//Lookbook Button
+.homepage-looks {
+  &__btn {
+    color: $color-white;
+    background-color: $color-main;
+
+    &:hover {
+      background-color: $color-secondary;
+    }
+  }
+}
+
+@media only screen and (max-width: $bp-phone) {
+  .homepage-looks {
+    &__btn {
+      background-color: $color-secondary;
+
+      &:hover {
+        background-color: $color-main;
+      }
+    }
+  }
+}
+
+/////////////////////////////////////////////////
+// Product Page Buttons
+.product-btn {
+  background-color: $color-main;
+  color: $color-white;
+  width: 10rem;
+}

@@ -1,0 +1,21 @@
+.faq {
+  &__heading {
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+  &__text {
+    padding-bottom: 5rem;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    // margin-right: 1rem;
+    color: $color-secondary;
+    &--question {
+      font-weight: 600;
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+    &--answer {
+      margin-bottom: 2.5rem;
+    }
+  }
+}

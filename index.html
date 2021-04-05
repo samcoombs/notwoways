@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./scss/main.css" />
+    <link rel="icon" href="./icons/NTW-logo-black.png" />
+    <title>notwoways</title>
+  </head>
+  <body>
+    <!-- Nav Bar -->
+    <nav class="nav">
+      <a href="./index.html"
+        ><img
+          class="nav__logo"
+          src="./icons/NTW-logo-white.png"
+          alt="notwoways"
+      /></a>
+      <!-- Burger Nav Button -->
+      <div class="hamburger">
+        <div class="hamburger__line hamburger__line--1"></div>
+        <div class="hamburger__line hamburger__line--2"></div>
+        <div class="hamburger__line hamburger__line--3"></div>
+      </div>
+    </nav>
+
+    <!-- Slide out menu // Styling is in the nav component-->
+    <div class="hamburger__nav">
+      <div class="hamburger__nav--left">
+        <a class="hamburger__nav--login-link" href="#"
+          ><button class="button hamburger__nav--login-btn">Login</button></a
+        >
+
+        <a class="hamburger__nav--signup" href="#"
+          ><p class="hamburger__nav--signup">Or click here to register</p></a
+        >
+      </div>
+      <div class="hamburger__nav--right">
+        <ul class="hamburger__nav--list">
+          <li class="hamburger__nav--item">
+            <a class="hamburger__nav--link" href="./index.html">Home</a>
+          </li>
+          <li class="hamburger__nav--item">
+            <a class="hamburger__nav--link" href="./shop.html">Shop</a>
+          </li>
+          <li class="hamburger__nav--item">
+            <a class="hamburger__nav--link" href="./lookbook.html">Looks</a>
+          </li>
+          <li class="hamburger__nav--item">
+            <a class="hamburger__nav--link" href="./FAQ.html">FAQ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Hero -->
+    <div class="hero-container">
+      <div class="hero">
+        <div class="hero__text">
+          <p class="subheading hero__subheading">notwoways</p>
+          <h1 class="main-heading hero__main-heading">Subsolar</h1>
+          <a href="./shop.html"
+            ><button class="button hero__btn">Shop Now</button></a
+          >
+        </div>
+        <div class="hero__date">
+          <p class="hero__date--text">6PM GMT - 08/03/21</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lookbook -->
+    <section class="homepage-looks">
+      <div class="homepage-looks__text">
+        <p class="subheading homepage-looks__subheading">subsolar</p>
+        <h1 class="main-heading homepage-looks__main-heading">Lookbook</h1>
+        <a href="./lookbook.html"
+          ><button class="button homepage-looks__btn">View Now</button></a
+        >
+      </div>
+      <div class="homepage-looks__image"></div>
+    </section>
+
+    <!-- Video -->
+    <section class="homepage-video">
+      <div class="homepage-video__inner-container">
+        <iframe
+          width="5000"
+          height="2000"
+          class="homepage-video__vid"
+          src="https://www.youtube-nocookie.com/embed/0fG5tN1cHjE?controls=0&autoplay=1&mute=1&loop=1&modestbranding=1&autohide=1&showinfo=0"
+          title="YouTube video player"
+          style="pointer-events: none"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <!-- Email part of the footer -->
+      <div class="footer__email">
+        <div class="footer__email--container">
+          <h2 class="footer__email--heading">Be the first to know</h2>
+          <p class="footer__email--subheading">
+            Future releases, special events and more
+          </p>
+
+          <form class="footer__email--form" action="#">
+            <input
+              class="footer__email--input"
+              type="email"
+              name="email"
+              id="footer-email"
+            />
+            <input
+              class="footer__email--submit"
+              type="submit"
+              value="&raquo;"
+            />
+          </form>
+        </div>
+      </div>
+      <!-- Main section of the footer -->
+      <div class="footer__main">
+        <!-- Social Media SVGs -->
+        <div class="footer__main--socials">
+          <a target="_blank" href="https://www.instagram.com/notwoways/"
+            ><img
+              class="footer__main--socials-icon"
+              src="./icons/Instagram.svg"
+              alt="Instagram"
+            />
+          </a>
+
+          <a target="_blank" href="https://twitter.com/notwoways"
+            ><img
+              class="footer__main--socials-icon"
+              src="./icons/Twitter.svg"
+              alt="Twitter"
+          /></a>
+        </div>
+        <!-- List -->
+        <ul class="footer__main--list">
+          <li><a class="footer__main--list-item" href="#">Contact Us</a></li>
+          <li>
+            <a class="footer__main--list-item" href="#">Returns & Exchanges</a>
+          </li>
+          <li>
+            <a class="footer__main--list-item" href="#">Privacy Policy</a>
+          </li>
+          <li>
+            <a class="footer__main--list-item" href="#">Terms & Conditions</a>
+          </li>
+          <li><a class="footer__main--list-item" href="./FAQ.html">FAQ</a></li>
+        </ul>
+
+        <!-- Payment options -->
+        <div class="footer__main--payment">
+          <img
+            class="footer__main--payment-icon"
+            src="./icons/payment-1.svg"
+            alt="Amex"
+          />
+          <img
+            class="footer__main--payment-icon"
+            src="./icons/payment-2.svg"
+            alt="Apple Pay"
+          />
+          <img
+            class="footer__main--payment-icon"
+            src="./icons/payment-3.svg"
+            alt="Bitcoin"
+          />
+          <img
+            class="footer__main--payment-icon"
+            src="./icons/payment-4.svg"
+            alt="Ethereum"
+          />
+          <img
+            class="footer__main--payment-icon"
+            src="./icons/payment-5.svg"
+            alt="Google Pay"
+          />
+          <img
+            class="footer__main--payment-icon"
+            src="./icons/payment-6.svg"
+            alt="Litecoin"
+          />
+          <img
+            class="footer__main--payment-icon"
+            src="./icons/payment-7.svg"
+            alt="Maestro"
+          />
+          <img
+            class="footer__main--payment-icon"
+            src="./icons/payment-8.svg"
+            alt="MasterCard"
+          />
+          <img
+            class="footer__main--payment-icon"
+            src="./icons/payment-9.svg"
+            alt="PayPal"
+          />
+          <img
+            class="footer__main--payment-icon"
+            src="./icons/payment-10.svg"
+            alt="Shopify Pay"
+          />
+          <img
+            class="footer__main--payment-icon"
+            src="./icons/payment-11.svg"
+            alt="Visa"
+          />
+        </div>
+        <!-- Copyright -->
+        <p class="footer__main--copy">&copy; notwoways 2021</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/navMenu.js"></script>
+  </body>
+</html>

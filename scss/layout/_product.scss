@@ -1,0 +1,157 @@
+.product-img {
+  cursor: pointer;
+}
+
+.subsolar {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  //   Images
+  &__image {
+    &--main {
+      height: 30rem;
+      width: 45rem;
+      // background-image: url(../img/shoe/shoe-1.jpeg);
+      // background-position: center;
+      // background-size: cover;
+    }
+    &--small {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      margin-top: 0.45rem;
+      &-img {
+        width: 4.5rem;
+      }
+    }
+  }
+  // Text
+  &__text {
+    &--sizing {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 25rem;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+      &-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 3rem;
+        width: 3rem;
+        margin: 0.5rem;
+        background-color: $color-grey-light-1;
+        overflow: hidden;
+
+        .no-stock-line {
+          position: absolute;
+          background-color: $color-main;
+          height: 0.2rem;
+          width: 4rem;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+    &--info {
+      margin-top: 5rem;
+      &:last-child {
+        margin-top: 0.5rem;
+      }
+    }
+  }
+}
+
+.size-guide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 5rem;
+  &__img {
+    height: 30rem;
+  }
+}
+
+@media only screen and (max-width: $bp-laptop-l) {
+  .subsolar {
+    &__image {
+      width: 30rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      &--main {
+        width: 30rem;
+        height: 20rem;
+      }
+      &--small {
+        justify-content: center;
+        &-img {
+          margin: 0.25rem;
+        }
+      }
+    }
+    &__text {
+      &--sizing {
+        &-box {
+          height: 2.5rem;
+          width: 2.5rem;
+
+          .no-stock-line {
+            width: 3.25rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $bp-tablet) {
+  .subsolar {
+    flex-direction: column;
+
+    &__image {
+      width: 100%;
+      margin-bottom: 5rem;
+      &--main {
+        margin: 0;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $bp-phone) {
+  .subsolar {
+    text-align: center;
+
+    &__image {
+      &--small {
+        &-img {
+          width: 3.5rem;
+        }
+      }
+    }
+    &__text {
+      justify-content: center;
+      &--info {
+        &:last-child {
+          margin-top: 1.25rem;
+        }
+      }
+      &--sizing {
+        justify-content: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        max-width: 100%;
+      }
+    }
+  }
+  .size-guide {
+    margin-top: 5rem;
+    &__img {
+      height: 20rem;
+    }
+  }
+}
